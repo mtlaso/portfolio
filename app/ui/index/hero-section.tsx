@@ -5,29 +5,31 @@ import {
 	FaLinkedin,
 	FaSquareGithub,
 } from "react-icons/fa6";
-import { SECTIONS_MARGIN } from "../sections-margin";
+import { SPACING } from "../spacing";
 
 export const HeroSection = () => {
 	return (
-		<section className={`flex flex-col gap-1 ${SECTIONS_MARGIN}`}>
+		<section className={`${SPACING.TITLE_SPACING} ${SPACING.SECTIONS_SPACING}`}>
 			<div>
 				<p className="text-4xl">Danny D.</p>
 			</div>
 
-			<div className="flex items-center gap-1">
-				<BiCodeCurly />
-				<p className="text-sm text-neutral-300">Développeur full stack</p>
-			</div>
+			<div className="flex flex-col gap-1">
+				<div className="flex items-center gap-1">
+					<BiCodeCurly />
+					<p className="text-sm text-neutral-300">Développeur full stack</p>
+				</div>
 
-			<div className="flex items-center gap-1">
-				<FaLocationDot />
-				<p className="text-neutral-300 text-sm">QC, CAN 🍁</p>
-			</div>
+				<div className="flex items-center gap-1">
+					<FaLocationDot />
+					<p className="text-neutral-300 text-sm">QC, CAN 🍁</p>
+				</div>
 
-			<div className="flex gap-2">
-				<FaRegEnvelope />
-				<FaLinkedin />
-				<FaSquareGithub />
+				<div className="flex gap-2">
+					<FaRegEnvelope />
+					<FaLinkedin />
+					<FaSquareGithub />
+				</div>
 			</div>
 		</section>
 	);
