@@ -1,11 +1,9 @@
 import { BiCodeCurly } from "react-icons/bi";
-import {
-	FaLocationDot,
-	FaRegEnvelope,
-	FaLinkedin,
-	FaSquareGithub,
-} from "react-icons/fa6";
-import { SPACING } from "../spacing";
+import { FaLocationDot, FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import { SPACING } from "@/app/ui/spacing";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
+import { ShowEmail } from "@/app/ui/index/show-email";
 
 export const HeroSection = () => {
 	return (
@@ -16,7 +14,7 @@ export const HeroSection = () => {
 				<p className="text-4xl">Danny D.</p>
 			</div>
 
-			<div className="flex flex-col gap-1">
+			<div className="flex flex-col gap-2">
 				<div className="flex items-center gap-1">
 					<BiCodeCurly />
 					<p className="text-sm text-neutral-300">Développeur full stack</p>
@@ -28,12 +26,26 @@ export const HeroSection = () => {
 				</div>
 
 				<div className="flex gap-4">
-					<FaRegEnvelope size={18} />
-					<FaLinkedin size={18} />
-					<FaSquareGithub size={18} />
-				</div>
+					<Link
+						target="blank"
+						rel="noopener noreferrer"
+						className={buttonVariants({ variant: "outline", size: "icon" })}
+						href="https://www.linkedin.com/in/ddem/"
+					>
+						<FaLinkedinIn />
+					</Link>
 
-				<button type="button">Ajouter bouton vers section contact!!!</button>
+					<ShowEmail />
+
+					<Link
+						target="blank"
+						rel="noopener noreferrer"
+						className={buttonVariants({ variant: "outline", size: "icon" })}
+						href="https://github.com/mtlaso/"
+					>
+						<FaGithub />
+					</Link>
+				</div>
 			</div>
 		</section>
 	);
