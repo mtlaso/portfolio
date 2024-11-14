@@ -184,7 +184,7 @@ const StackCard = ({
 			className="p-2.5 
 			grid grid-rows-subgrid row-span-2
       rounded-xl border border-transparent bg-neutral-800
-      hover:bg-neutral-700 hover:border-neutral-600 transition-colors duration-200"
+      hover:bg-purple-700 transition-colors duration-200"
 		>
 			<p className="flex items-center gap-1">
 				{<item.icon size={item.iconSize} color={item.iconColor} />}

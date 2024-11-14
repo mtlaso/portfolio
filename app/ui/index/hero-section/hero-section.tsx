@@ -23,7 +23,7 @@ export const HeroSection = () => {
 
 				<div className="flex items-center gap-1">
 					<FaLocationDot />
-					<p className="text-neutral-300 text-sm">Qc, CAN 🍁</p>
+					<p className="text-neutral-300 text-sm">Québec, CA 🍁</p>
 				</div>
 
 				<div className="flex gap-4">

@@ -5,7 +5,7 @@ import { LinksSection } from "@/app/ui/index/links-section/links-section";
 
 export default function Home() {
 	return (
-		<main className="min-h-screen px-4">
+		<main className="min-h-screen max-w-2xl mx-auto px-4">
 			<NavBar />
 			<HeroSection />
 			<WorkSection />
