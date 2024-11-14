@@ -29,7 +29,7 @@ export const stackItems: StackItem[] = [
 	},
 	{
 		icon: RiNextjsFill,
-		iconColor: "white",
+		iconColor: "#d3d3d3",
 		iconSize: "24",
 		title: "Next.js",
 		desc: "Framework React",
