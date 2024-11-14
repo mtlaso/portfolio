@@ -25,7 +25,9 @@ const PersonalProjectsWrapper = () => {
 		>
 			<div className={`${SPACING.TITLES_SPACING}`}>
 				<h2 className="font-semibold tracking-tight text-3xl">Projets</h2>
-				<p className="text-neutral-300 text-sm">Quelques projets personnels.</p>
+				<p className="dark:text-neutral-300 text-sm">
+					Quelques projets personnels.
+				</p>
 			</div>
 
 			<ul className={`${SPACING.INSIDE_SECTIONS_SPACING}`}>
@@ -47,7 +49,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
 	return (
 		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
 			<div className="col-span-1">
-				<p className="capitalize text-sm text-neutral-500">{projectDate} ~</p>
+				<p className="capitalize text-sm dark:text-neutral-500">
+					{projectDate} ~
+				</p>
 			</div>
 
 			<div className="col-span-3 grid gap-2">
@@ -58,14 +62,14 @@ const ProjectCard = ({ project }: { project: Project }) => {
 						rel="noopener noreferrer"
 					>
 						<p
-							className="capitalize text-base text-neutral-100 font-semibold
+							className="capitalize text-base dark:text-neutral-100 font-semibold
           hover:text-purple-700	transition-colors duration-200"
 						>
 							{project.title}
 							<span className="text-purple-700">&nbsp;↗</span>
 						</p>
 					</Link>
-					<p className="text-justify text-sm text-neutral-300">
+					<p className="text-justify text-sm dark:text-neutral-300">
 						{project.desc}
 					</p>
 				</div>
@@ -114,20 +118,23 @@ const WorkCard = ({ work }: { work: Work }) => {
 	return (
 		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
 			<div className="col-span-1">
-				<p className="capitalize text-sm text-neutral-500">
+				<p className="capitalize text-sm dark:text-neutral-500">
 					{startDate} — {endDate}
 				</p>
 			</div>
 
 			<div className="col-span-3 grid gap-2">
 				<div className={`${SPACING.TITLES_SPACING}`}>
-					<p className="capitalize text-base text-neutral-100 font-semibold">
+					<p className="capitalize text-base dark:text-neutral-100 font-semibold">
 						{work.title} — {work.company}
 					</p>
 
 					<ul className="list-[katakana] list-inside marker:text-purple-700">
 						{work.achievements?.map((item: string) => (
-							<li className="text-justify text-sm text-neutral-300" key={item}>
+							<li
+								className="text-justify text-sm dark:text-neutral-300"
+								key={item}
+							>
 								{item}
 							</li>
 						))}
@@ -160,7 +167,7 @@ const TechStackWrapper = () => {
 		>
 			<div className={`${SPACING.TITLES_SPACING} `}>
 				<h2 className="font-semibold tracking-tight text-3xl">Technologies</h2>
-				<p className="text-neutral-300 text-sm">
+				<p className="dark:text-neutral-300 text-sm">
 					Quelques unes des technologies dans les quelles je me spécialise.
 				</p>
 			</div>
@@ -183,14 +190,14 @@ const StackCard = ({
 		<li
 			className="p-2.5 
 			grid grid-rows-subgrid row-span-2
-      rounded-xl border border-transparent bg-neutral-800
-      hover:bg-purple-700 transition-colors duration-200"
+      rounded-xl border dark:border-transparent dark:bg-neutral-800
+      hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors duration-200"
 		>
 			<p className="flex items-center gap-1">
 				{<item.icon size={item.iconSize} color={item.iconColor} />}
 				{item.title}
 			</p>
-			<p className="text-sm text-neutral-300">{item.desc}</p>
+			<p className="text-sm dark:text-neutral-300">{item.desc}</p>
 		</li>
 	);
 };

@@ -18,12 +18,14 @@ export const HeroSection = () => {
 			<div className="flex flex-col gap-2">
 				<div className="flex items-center gap-1">
 					<BiCodeCurly />
-					<p className="text-sm text-neutral-300">Développeur full stack</p>
+					<p className="text-sm dark:text-neutral-300">
+						Développeur full stack
+					</p>
 				</div>
 
 				<div className="flex items-center gap-1">
 					<FaLocationDot />
-					<p className="text-neutral-300 text-sm">Québec, CA 🍁</p>
+					<p className="dark:text-neutral-300 text-sm">Québec, CA 🍁</p>
 				</div>
 
 				<div className="flex gap-4">
