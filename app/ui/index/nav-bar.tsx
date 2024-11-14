@@ -1,5 +1,6 @@
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import Link from "next/link";
+import { Suspense } from "react";
 
 export const NavBar = () => {
 	return (
