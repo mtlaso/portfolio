@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useCopyEmail } from "@/components/ui/copy-email";
 import {
 	Tooltip,
 	TooltipContent,
@@ -8,23 +9,15 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { FaEnvelope } from "react-icons/fa6";
-import { toast } from "sonner";
 
-export const ShowEmail = () => {
-	const handleClick = async () => {
-		try {
-			await navigator.clipboard.writeText("123@email.com");
-			toast("Courriel copié dans le presse-papier!");
-		} catch (err) {
-			toast.error("Impossible de copier le courriel dans le presse-papier");
-		}
-	};
+export const CopyEmail = () => {
+	const { handleCopyEmail } = useCopyEmail();
 
 	return (
 		<TooltipProvider delayDuration={150}>
 			<Tooltip>
 				<TooltipTrigger asChild>
-					<Button variant="outline" size="icon" onClick={handleClick}>
+					<Button variant="outline" size="icon" onClick={handleCopyEmail}>
 						<FaEnvelope />
 					</Button>
 				</TooltipTrigger>

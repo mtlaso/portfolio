@@ -45,45 +45,46 @@ const ProjectCard = ({ project }: { project: Project }) => {
 	});
 
 	return (
-		<li>
-			<Link
-				href={project.link.toString()}
-				target="blank"
-				rel="noopener noreferrer"
-				className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4"
-			>
-				<div className="col-span-1">
-					<p className="capitalize text-sm text-neutral-500">{projectDate} ~</p>
-				</div>
+		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
+			<div className="col-span-1">
+				<p className="capitalize text-sm text-neutral-500">{projectDate} ~</p>
+			</div>
 
-				<div className="col-span-3 grid gap-2">
-					<div className={`${SPACING.TITLES_SPACING}`}>
-						<p className="capitalize text-base text-neutral-100 font-semibold">
+			<div className="col-span-3 grid gap-2">
+				<div className={`${SPACING.TITLES_SPACING}`}>
+					<Link
+						href={project.link.toString()}
+						target="blank"
+						rel="noopener noreferrer"
+					>
+						<p
+							className="capitalize text-base text-neutral-100 font-semibold
+          hover:text-purple-700	transition-colors duration-200"
+						>
 							{project.title}
 							<span className="text-purple-700">&nbsp;↗</span>
 						</p>
-
-						<p className="text-justify text-sm text-neutral-300">
-							{project.desc}
-						</p>
-					</div>
-
-					<ul className="flex flex-wrap gap-1">
-						{project.technologies.map(
-							(item: string, index: number, arr: string[]) => (
-								<li
-									className="text-xs text-neutral-500
-                  hover:text-purple-700 transition-colors duration-200"
-									key={item}
-								>
-									{item}
-									{index < arr.length - 1 && <span>&nbsp;•</span>}
-								</li>
-							),
-						)}
-					</ul>
+					</Link>
+					<p className="text-justify text-sm text-neutral-300">
+						{project.desc}
+					</p>
 				</div>
-			</Link>
+
+				<ul className="flex flex-wrap gap-1">
+					{project.technologies.map(
+						(item: string, index: number, arr: string[]) => (
+							<li
+								className="text-xs text-neutral-500
+                  hover:text-purple-700 transition-colors duration-200"
+								key={item}
+							>
+								{item}
+								{index < arr.length - 1 && <span>&nbsp;•</span>}
+							</li>
+						),
+					)}
+				</ul>
+			</div>
 		</li>
 	);
 };

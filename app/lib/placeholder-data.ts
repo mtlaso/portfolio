@@ -164,3 +164,10 @@ export const projects: Project[] = [
 		],
 	},
 ];
+
+export const CONTACT = {
+	EMAIL: "votre@email.com",
+	LINKEDIN: "https://www.linkedin.com/in/ddem/",
+	GITHUB: "https://github.com/mtlaso/",
+	SOURCE_CODE: "https://github.com/mtlaso/portfolio",
+} as const;

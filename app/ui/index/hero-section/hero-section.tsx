@@ -3,7 +3,8 @@ import { FaLocationDot, FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { SPACING } from "@/app/ui/spacing";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
-import { ShowEmail } from "@/app/ui/index/show-email";
+import { CopyEmail } from "@/app/ui/index/hero-section/copy-email";
+import { CONTACT } from "@/app/lib/placeholder-data";
 
 export const HeroSection = () => {
 	return (
@@ -22,7 +23,7 @@ export const HeroSection = () => {
 
 				<div className="flex items-center gap-1">
 					<FaLocationDot />
-					<p className="text-neutral-300 text-sm">QC, CAN 🍁</p>
+					<p className="text-neutral-300 text-sm">Qc, CAN 🍁</p>
 				</div>
 
 				<div className="flex gap-4">
@@ -30,18 +31,18 @@ export const HeroSection = () => {
 						target="blank"
 						rel="noopener noreferrer"
 						className={buttonVariants({ variant: "outline", size: "icon" })}
-						href="https://www.linkedin.com/in/ddem/"
+						href={`${CONTACT.LINKEDIN}`}
 					>
 						<FaLinkedinIn />
 					</Link>
 
-					<ShowEmail />
+					<CopyEmail />
 
 					<Link
 						target="blank"
 						rel="noopener noreferrer"
 						className={buttonVariants({ variant: "outline", size: "icon" })}
-						href="https://github.com/mtlaso/"
+						href={`${CONTACT.GITHUB}`}
 					>
 						<FaGithub />
 					</Link>
