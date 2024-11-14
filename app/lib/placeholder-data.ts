@@ -5,7 +5,11 @@ import {
 	BiLogoNodejs,
 } from "react-icons/bi";
 import { TbBrandCSharp } from "react-icons/tb";
-import { RiNextjsFill, RiDatabase2Line } from "react-icons/ri";
+import {
+	RiNextjsFill,
+	RiDatabase2Line,
+	RiTailwindCssFill,
+} from "react-icons/ri";
 import type { Work, StackItem } from "@/app/lib/definitions";
 
 export const stackItems: StackItem[] = [
@@ -30,6 +34,15 @@ export const stackItems: StackItem[] = [
 		title: "Next.js",
 		desc: "Framework React",
 	},
+
+	{
+		icon: RiTailwindCssFill,
+		iconColor: "#38bdf8",
+		iconSize: "24",
+		title: "tailwindcss",
+		desc: "Framework CSS",
+	},
+
 	{
 		icon: BiLogoGoLang,
 		iconSize: "28",
