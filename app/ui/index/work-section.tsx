@@ -43,7 +43,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 			</div>
 
 			<div className="col-span-3 grid gap-2">
-				<div>
+				<div className={`${SPACING.TITLES_SPACING}`}>
 					<p className="capitalize text-base text-neutral-100 font-semibold">
 						{work.title} — {work.company}
 					</p>
