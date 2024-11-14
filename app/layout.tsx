@@ -1,6 +1,7 @@
 import "@/app/ui/globals.css";
 import type { Metadata } from "next";
 import { inter } from "@/app/ui/fonts";
+import ThemeProvider from "@/components/theme-provider";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -12,9 +13,21 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	// suppressHydrationWarning (next-theme)
 	return (
-		<html lang="fr">
-			<body className={`${inter.className} antialiased`}>{children}</body>
-		</html>
+		<>
+			<html lang="fr" suppressHydrationWarning>
+				<body className={`${inter.className} antialiased`}>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						{children}
+					</ThemeProvider>
+				</body>
+			</html>
+		</>
 	);
 }

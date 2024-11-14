@@ -160,7 +160,7 @@ const TechStackWrapper = () => {
 			<div className={`${SPACING.TITLES_SPACING} `}>
 				<h2 className="font-semibold tracking-tight text-3xl">Technologies</h2>
 				<p className="text-neutral-300 text-sm">
-					Quelques unes des technologies sur les quelles je me spécialise.
+					Quelques unes des technologies dans les quelles je me spécialise.
 				</p>
 			</div>
 

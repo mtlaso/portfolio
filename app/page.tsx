@@ -1,6 +1,6 @@
-import { HeroSection } from "./ui/index/hero-section";
-import { WorkSection } from "./ui/index/work-section";
-import { NavBar } from "./ui/index/nav-bar";
+import { HeroSection } from "@/app/ui/index/hero-section";
+import { WorkSection } from "@/app/ui/index/work-section";
+import { NavBar } from "@/app/ui/index/nav-bar";
 
 export default function Home() {
 	return (

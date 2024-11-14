@@ -27,10 +27,10 @@ export const HeroSection = () => {
 					<p className="text-neutral-300 text-sm">QC, CAN 🍁</p>
 				</div>
 
-				<div className="flex gap-2">
-					<FaRegEnvelope />
-					<FaLinkedin />
-					<FaSquareGithub />
+				<div className="flex gap-4">
+					<FaRegEnvelope size={18} />
+					<FaLinkedin size={18} />
+					<FaSquareGithub size={18} />
 				</div>
 
 				<button type="button">Ajouter bouton vers section contact!!!</button>
