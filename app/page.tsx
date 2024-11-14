@@ -10,7 +10,6 @@ export default function Home() {
 			<HeroSection />
 			<WorkSection />
 			<LinksSection />
-			<p className="text-red-500 sm:text-purple-500 md:text-red-500">test</p>
 		</main>
 	);
 }
