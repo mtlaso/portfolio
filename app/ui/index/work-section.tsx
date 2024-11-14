@@ -1,12 +1,11 @@
-import type { ReactElement } from "react";
 import { SPACING } from "@/app/ui/spacing";
 import { stackItems, workExperience } from "@/app/lib/placeholder-data";
-import { StackItem, Work } from "@/app/lib/definitions";
+import type { StackItem, Work } from "@/app/lib/definitions";
 import { date } from "@/app/lib/utils/date";
 
 export const WorkSection = () => {
 	return (
-		<section className={`${SPACING.SECTIONS_SPACING}`}>
+		<section>
 			<TechStackWrapper />
 			<WorkExperienceWrapper />
 		</section>
@@ -18,11 +17,11 @@ const WorkExperienceWrapper = () => {
 		<section
 			className={`${SPACING.SECTIONS_SPACING} ${SPACING.INSIDE_SECTIONS_SPACING}`}
 		>
-			<div className={`${SPACING.TITLE_SPACING}`}>
+			<div className={`${SPACING.TITLES_SPACING}`}>
 				<h2 className="font-semibold tracking-tight text-3xl">Emplois</h2>
 			</div>
 
-			<ul>
+			<ul className={`${SPACING.INSIDE_SECTIONS_SPACING}`}>
 				{workExperience.map((item) => (
 					<WorkCard work={item} key={item.start} />
 				))}
@@ -36,15 +35,38 @@ const WorkCard = ({ work }: { work: Work }) => {
 	const endDate = work.finish ? date.format(work.finish) : "Présent";
 
 	return (
-		<li>
-			<div>
-				<p className="capitalize text-sm text-neutral-300">
+		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
+			<div className="col-span-1">
+				<p className="capitalize text-sm text-neutral-500">
 					{startDate} — {endDate}
 				</p>
+			</div>
 
-				<p className="capitalize text-sm text-neutral-300">
-					{work.title} — {work.company}
-				</p>
+			<div className="col-span-3 grid gap-2">
+				<div>
+					<p className="capitalize text-base text-neutral-100 font-semibold">
+						{work.title} — {work.company}
+					</p>
+
+					<ul className="list-[katakana] list-inside marker:text-purple-700">
+						{work.achievements?.map((item: string) => (
+							<li className="text-justify text-sm text-neutral-300" key={item}>
+								{item}
+							</li>
+						))}
+					</ul>
+				</div>
+
+				<ul className="flex flex-wrap gap-1">
+					{work.technologies?.map(
+						(item: string, index: number, arr: string[]) => (
+							<li className="text-xs text-neutral-500" key={item}>
+								{item}
+								{index < arr.length - 1 && <span>&nbsp;•</span>}
+							</li>
+						),
+					)}
+				</ul>
 			</div>
 		</li>
 	);
@@ -55,7 +77,7 @@ const TechStackWrapper = () => {
 		<section
 			className={`${SPACING.SECTIONS_SPACING} ${SPACING.INSIDE_SECTIONS_SPACING}`}
 		>
-			<div className={`${SPACING.TITLE_SPACING} `}>
+			<div className={`${SPACING.TITLES_SPACING} `}>
 				<h2 className="font-semibold tracking-tight text-3xl">Technologies</h2>
 				<p className="text-neutral-300 text-sm">
 					Quelques unes des technologies sur les quelles je me spécialise.
@@ -78,7 +100,7 @@ const StackCard = ({
 }) => {
 	return (
 		<li
-			className="space-y-1 p-2.5 
+			className="p-2.5 
 			grid grid-rows-subgrid row-span-2
       rounded-xl border border-transparent bg-neutral-800
       hover:bg-neutral-700 hover:border-neutral-600 transition-colors duration-200"

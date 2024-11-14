@@ -98,10 +98,5 @@ export const workExperience: Work[] = [
 			"Responsable de la préparation et de la récupération des équipements informatiques pour les employés entrants et sortants",
 			"Assuré un soutien technique rapide et fiable aux employés",
 		],
-		technologies: [
-			"Support technique",
-			"Gestion d'équipements",
-			"Service client",
-		],
 	},
 ];

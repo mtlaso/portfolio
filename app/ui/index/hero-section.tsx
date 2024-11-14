@@ -9,7 +9,9 @@ import { SPACING } from "../spacing";
 
 export const HeroSection = () => {
 	return (
-		<section className={`${SPACING.TITLE_SPACING} ${SPACING.SECTIONS_SPACING}`}>
+		<section
+			className={`${SPACING.TITLES_SPACING} ${SPACING.SECTIONS_SPACING}`}
+		>
 			<div>
 				<p className="text-4xl">Danny D.</p>
 			</div>
@@ -30,6 +32,8 @@ export const HeroSection = () => {
 					<FaLinkedin />
 					<FaSquareGithub />
 				</div>
+
+				<button type="button">Ajouter bouton vers section contact!!!</button>
 			</div>
 		</section>
 	);
