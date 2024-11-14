@@ -10,7 +10,7 @@ import {
 	RiDatabase2Line,
 	RiTailwindCssFill,
 } from "react-icons/ri";
-import type { Work, StackItem } from "@/app/lib/definitions";
+import type { Work, StackItem, Project } from "@/app/lib/definitions";
 
 export const stackItems: StackItem[] = [
 	{
@@ -110,6 +110,57 @@ export const workExperience: Work[] = [
 		achievements: [
 			"Responsable de la préparation et de la récupération des équipements informatiques pour les employés entrants et sortants",
 			"Assuré un soutien technique rapide et fiable aux employés",
+		],
+	},
+];
+
+export const projects: Project[] = [
+	{
+		date: new Date(2024, 2, 0).toISOString(),
+		title: "Serveur TCP en Go",
+		desc: "Serveur de chat concurrent en Go permettant la communication en temps réel entre plusieurs clients, avec système de file d'attente et mini-jeu de devinettes intégré.",
+		link: new URL("https://github.com/mtlaso/go-tcp-server"),
+		technologies: ["Go", "TCP", "Concurrence"],
+	},
+	{
+		date: new Date(2024, 2, 0).toISOString(),
+		title: "EvaluPro",
+		desc: "Application web d'évaluation de produits avec système de notation multicritères. Les utilisateurs peuvent rechercher, comparer et évaluer des produits selon différents rôles (visiteur, utilisateur, testeur, admin).",
+		link: new URL("https://github.com/mtlaso/evalupro"),
+		technologies: [
+			"TypeScript",
+			"Node.js",
+			"Express.js",
+			"Vue.js",
+			"MariaDB",
+			"Sequelize",
+		],
+	},
+	{
+		date: new Date(2023, 2, 0).toISOString(),
+		title: "Clone de Trello",
+		desc: "Application de gestion de tâches style Kanban. Fonctionnalités de tableaux, listes et cartes avec filtrage par date limite et drag-and-drop.",
+		link: new URL("https://github.com/mtlaso/tp3-dev-web"),
+		technologies: [
+			"Vue.js",
+			"TypeScript",
+			"Node.js",
+			"Express",
+			"MongoDB",
+			"Pinia",
+		],
+	},
+	{
+		date: new Date(2022, 2, 0).toISOString(),
+		title: "Clone de Google Calendar",
+		desc: "Calendrier avec synchronisation en temps réel entre appareils via WebSocket. Permet la création, modification et suppression d'événements avec persistance PostgreSQL.",
+		link: new URL("https://github.com/mtlaso/calendrier-nextjs"),
+		technologies: [
+			"Next.js",
+			"TypeScript",
+			"WebSocket",
+			"PostgreSQL",
+			"Recoil.js",
 		],
 	},
 ];

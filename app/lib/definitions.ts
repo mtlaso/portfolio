@@ -33,3 +33,19 @@ export interface Work {
 	technologies?: string[];
 	achievements?: string[];
 }
+
+export interface Project {
+	/**
+	 * ISO string format.
+	 * @example
+	 * ```ts
+	 * new Date(2024, 0, 0).toISOString()
+	 * "2023-12-31T05:00:00.000Z"
+	 * ```
+	 */
+	date: string;
+	title: string;
+	desc: string;
+	link: URL;
+	technologies: string[];
+}
