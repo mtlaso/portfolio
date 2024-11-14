@@ -71,7 +71,11 @@ const ProjectCard = ({ project }: { project: Project }) => {
 					<ul className="flex flex-wrap gap-1">
 						{project.technologies.map(
 							(item: string, index: number, arr: string[]) => (
-								<li className="text-xs text-neutral-500" key={item}>
+								<li
+									className="text-xs text-neutral-500
+                  hover:text-purple-700 transition-colors duration-200"
+									key={item}
+								>
 									{item}
 									{index < arr.length - 1 && <span>&nbsp;•</span>}
 								</li>
@@ -132,7 +136,11 @@ const WorkCard = ({ work }: { work: Work }) => {
 				<ul className="flex flex-wrap gap-1">
 					{work.technologies?.map(
 						(item: string, index: number, arr: string[]) => (
-							<li className="text-xs text-neutral-500" key={item}>
+							<li
+								className="text-xs text-neutral-500
+                hover:text-purple-700 transition-colors duration-200"
+								key={item}
+							>
 								{item}
 								{index < arr.length - 1 && <span>&nbsp;•</span>}
 							</li>
