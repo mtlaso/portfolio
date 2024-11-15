@@ -1,0 +1,102 @@
+{
+  "Common": {
+    "email": "Courriel",
+    "sourceCode": "Code source",
+    "present": "Présent",
+    "copyEmail": "Copier courriel",
+    "emailCopied": "Courriel copié dans le presse-papier!"
+  },
+  "NavBar": {
+    "modeToggle": {
+      "toggle": "Changer thème",
+      "dark": "Sombre",
+      "light": "Clair",
+      "system": "Système"
+    }
+  },
+  "HomePage": {
+    "Hero": {
+      "role": "Développeur full stack",
+      "location": "Québec, CA 🍁"
+    },
+    "TechStack": {
+      "title": "Technologies",
+      "subtitle": "Quelques unes des technologies dans les quelles je me spécialise.",
+      "items": {
+        "typescript": {
+          "description": "JavaScript avec une syntaxe pour les types"
+        },
+        "react": {
+          "description": "Librairie JavaScript d'interfaces utilisateur"
+        },
+        "nextjs": {
+          "description": "Framework React"
+        },
+        "tailwindcss": {
+          "description": "Framework CSS"
+        },
+        "golang": {
+          "description": "Language de programmation"
+        },
+        "nodejs": {
+          "description": "Environnement d'exécution JavaScript"
+        },
+        "sql": {
+          "description": "Bases de données SQL/NoSQL"
+        },
+        "csharp": {
+          "description": "Language de programmation"
+        }
+      }
+    },
+    "Work": {
+      "title": "Emplois",
+      "items": {
+        "cogiweb": {
+          "title": "Analyste développeur",
+          "achievements": [
+            "Participé à la transition d'une application monolithique C# vers des technologies web modernes",
+            "Maintenu et amélioré une application legacy en C#",
+            "Créé des outils internes pour accélérer le développement et la productivité de l'équipe",
+            "Résolu des bugs en production, assurant la stabilité et la fiabilité des services"
+          ]
+        },
+        "garneau": {
+          "title": "Tuteur Étudiants Informatique",
+          "achievements": [
+            "Tuteur pour des étudiants en informatique"
+          ]
+        },
+        "ramq": {
+          "title": "Technicien en gestion de la main-d'œuvre",
+          "achievements": [
+            "Responsable de la préparation et de la récupération des équipements informatiques pour les employés entrants et sortants",
+            "Assuré un soutien technique rapide et fiable aux employés"
+          ]
+        }
+      }
+    },
+    "Projects": {
+      "title": "Projets",
+      "subtitle": "Quelques projets personnels.",
+      "items": {
+        "go-tcp-server": {
+          "title": "Serveur TCP en Go",
+          "description": "Serveur de chat concurrent en Go permettant la communication en temps réel entre plusieurs clients, avec système de file d'attente et mini-jeu de devinettes intégré."
+        },
+        "evalupro": {
+          "title": "EvaluPro",
+          "description": "Application web d'évaluation de produits avec système de notation multicritères. Les utilisateurs peuvent rechercher, comparer et évaluer des produits selon différents rôles (visiteur, utilisateur, testeur, admin)."
+        },
+        "trello-clone": {
+          "title": "Clone de Trello",
+          "description": "Application de gestion de tâches style Kanban. Fonctionnalités de tableaux, listes et cartes avec filtrage par date limite et drag-and-drop."
+        },
+        "nextjs-calendar": {
+          "title": "Clone de Google Calendar",
+          "description": "Calendrier avec synchronisation en temps réel entre appareils via WebSocket. Permet la création, modification et suppression d'événements avec persistance PostgreSQL."
+        }
+      }
+    }
+  }
+}

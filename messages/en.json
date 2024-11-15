@@ -1,0 +1,102 @@
+{
+  "Common": {
+    "email": "Email",
+    "sourceCode": "Source code",
+    "present": "Present",
+    "copyEmail": "Copy email",
+    "emailCopied": "Email copied to clipboard!"
+  },
+  "NavBar": {
+    "modeToggle": {
+      "toggle": "Toggle theme",
+      "dark": "Dark",
+      "light": "Light",
+      "system": "System"
+    }
+  },
+  "HomePage": {
+    "Hero": {
+      "role": "Full stack developer",
+      "location": "Quebec, CA 🍁"
+    },
+    "TechStack": {
+      "title": "Technologies",
+      "subtitle": "Some of the technologies I specialize in.",
+      "items": {
+        "typescript": {
+          "description": "JavaScript with type syntax"
+        },
+        "react": {
+          "description": "JavaScript library for building user interfaces"
+        },
+        "nextjs": {
+          "description": "React framework"
+        },
+        "tailwindcss": {
+          "description": "CSS framework"
+        },
+        "golang": {
+          "description": "Programming language"
+        },
+        "nodejs": {
+          "description": "JavaScript runtime environment"
+        },
+        "sql": {
+          "description": "SQL/NoSQL databases"
+        },
+        "csharp": {
+          "description": "Programming language"
+        }
+      }
+    },
+    "Work": {
+      "title": "Experience",
+      "items": {
+        "cogiweb": {
+          "title": "Developer Analyst",
+          "achievements": [
+            "Participated in transitioning a C# monolithic application to modern web technologies",
+            "Maintained and improved a legacy C# application",
+            "Created internal tools to accelerate team development and productivity",
+            "Resolved production bugs, ensuring service stability and reliability"
+          ]
+        },
+        "garneau": {
+          "title": "Computer Science Tutor",
+          "achievements": [
+            "Tutor for computer science students"
+          ]
+        },
+        "ramq": {
+          "title": "Workforce Management Technician",
+          "achievements": [
+            "Responsible for preparing and recovering computer equipment for incoming and outgoing employees",
+            "Provided fast and reliable technical support to employees"
+          ]
+        }
+      }
+    },
+    "Projects": {
+      "title": "Projects",
+      "subtitle": "Some personal projects.",
+      "items": {
+        "go-tcp-server": {
+          "title": "Go TCP Server",
+          "description": "Concurrent chat server in Go enabling real-time communication between multiple clients, featuring an integrated queue system and mini guessing game."
+        },
+        "evalupro": {
+          "title": "EvaluPro",
+          "description": "Web application for product evaluation with a multi-criteria rating system. Users can search, compare and evaluate products according to different roles (visitor, user, tester, admin)."
+        },
+        "trello-clone": {
+          "title": "Trello Clone",
+          "description": "Kanban-style task management application. Features boards, lists and cards with deadline filtering and drag-and-drop functionality."
+        },
+        "nextjs-calendar": {
+          "title": "Next.js Calendar",
+          "description": "Calendar with real-time synchronization between devices via WebSocket. Enables creation, modification and deletion of events with PostgreSQL persistence."
+        }
+      }
+    }
+  }
+}
