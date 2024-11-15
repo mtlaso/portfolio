@@ -1,9 +1,11 @@
 import { CONTACT } from "@/app/[locale]/lib/placeholder-data";
 import { CopyEmail } from "@/app/[locale]/ui/index/links-section/copy-email";
 import { SPACING } from "@/app/[locale]/ui/spacing";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export const LinksSection = () => {
+	const t = useTranslations("Common");
 	return (
 		<section
 			className={`${SPACING.SECTIONS_SPACING} ${SPACING.INSIDE_SECTIONS_SPACING}`}
@@ -57,7 +59,7 @@ export const LinksSection = () => {
 						href={`${CONTACT.SOURCE_CODE}`}
 					>
 						<p>
-							Code source
+							{t("sourceCode")}
 							<span className="text-purple-700">&nbsp;↗</span>
 						</p>
 					</Link>
