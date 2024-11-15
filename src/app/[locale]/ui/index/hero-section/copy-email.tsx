@@ -1,15 +1,15 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { useCopyEmail } from "@/app/[locale]/lib/hooks/use-copy-email";
+import { Button } from "@/components/ui/button";
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { FaEnvelope } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
+import { FaEnvelope } from "react-icons/fa6";
 
 export const CopyEmail = () => {
 	const { handleCopyEmail } = useCopyEmail();

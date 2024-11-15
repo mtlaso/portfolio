@@ -1,11 +1,11 @@
-import { buttonVariants } from "@/components/ui/button";
 import { CONTACT } from "@/app/[locale]/lib/placeholder-data";
 import { CopyEmail } from "@/app/[locale]/ui/index/hero-section/copy-email";
 import { SPACING } from "@/app/[locale]/ui/spacing";
+import { buttonVariants } from "@/components/ui/button";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { BiCodeCurly } from "react-icons/bi";
 import { FaGithub, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
-import { useTranslations } from "next-intl";
 
 export const HeroSection = () => {
 	const t = useTranslations("HomePage.Hero");

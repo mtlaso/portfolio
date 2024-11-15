@@ -1,12 +1,12 @@
 import "@/app/[locale]/ui/globals.css";
+import { inter } from "@/app/[locale]/ui/fonts";
 import ThemeProvider from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
-import { inter } from "@/app/[locale]/ui/fonts";
-import type { Metadata } from "next";
-import { notFound } from "next/navigation";
-import { getMessages } from "next-intl/server";
-import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
+import type { Metadata } from "next";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
 
 export const metadata: Metadata = {
 	title: "Create Next App",

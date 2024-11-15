@@ -4,7 +4,6 @@ import {
 	stackItems,
 	workExperience,
 } from "@/app/[locale]/lib/placeholder-data";
-import { date } from "@/app/[locale]/lib/utils/date";
 import { SPACING } from "@/app/[locale]/ui/spacing";
 import {
 	type DateTimeFormatOptions,
