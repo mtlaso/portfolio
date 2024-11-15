@@ -52,10 +52,9 @@ const ProjectCard = ({ project }: { project: Project }) => {
 	const t = useTranslations("HomePage.Projects");
 
 	const format = useFormatter();
-	const projectDate = date.format(project.date, "fr-CA", {
-		year: "numeric",
+	const projectDate = format.dateTime(new Date(project.date), {
+		...INTL_DATE_FORMAT_OPTS,
 		month: undefined,
-		day: undefined,
 	});
 
 	const itemsTKey = `items.${project.translationKey}`;
