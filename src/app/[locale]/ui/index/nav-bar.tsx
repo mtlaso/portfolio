@@ -1,5 +1,11 @@
+import {
+	LocaleToggleSkeleton,
+	ModeToggleSkeleton,
+} from "@/app/[locale]/ui/skeletons";
+import { LocaleToggle } from "@/components/ui/locale-toggle";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Link } from "@/i18n/routing";
+import { Suspense } from "react";
 
 export const NavBar = () => {
 	return (
@@ -7,7 +13,12 @@ export const NavBar = () => {
 			<Link href={"/"} className="font-semibold tracking-tight">
 				NomSite
 			</Link>
-			<ModeToggle />
+			<Suspense fallback={<ModeToggleSkeleton />}>
+				<ModeToggle />
+			</Suspense>
+			<Suspense fallback={<LocaleToggleSkeleton />}>
+				<LocaleToggle />
+			</Suspense>
 		</nav>
 	);
 };
