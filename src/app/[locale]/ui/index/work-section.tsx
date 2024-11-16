@@ -10,7 +10,7 @@ import {
 	useFormatter,
 	useTranslations,
 } from "next-intl";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 const INTL_DATE_FORMAT_OPTS = {
 	year: "numeric",
@@ -61,9 +61,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 	return (
 		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
 			<div className="col-span-1">
-				<p className="capitalize text-sm dark:text-neutral-500">
-					{projectDate} ~
-				</p>
+				<p className="text-sm dark:text-neutral-500">{projectDate} ~</p>
 			</div>
 
 			<div className="col-span-3 grid gap-2">
@@ -74,8 +72,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
 						rel="noopener noreferrer"
 					>
 						<p
-							className="capitalize text-base dark:text-neutral-100 font-semibold
-          hover:text-purple-700	transition-colors duration-200"
+							className="text-base dark:text-neutral-100 font-semibold 
+              hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 						>
 							{t(`${itemsTKey}.title`)}
 							<span className="text-purple-700">&nbsp;↗</span>
@@ -150,7 +148,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 
 			<div className="col-span-3 grid gap-2">
 				<div className={`${SPACING.TITLES_SPACING}`}>
-					<p className="capitalize text-base dark:text-neutral-100 font-semibold">
+					<p className="text-base dark:text-neutral-100 font-semibold">
 						{t(`${itemsTKey}.title`)} — {work.company}
 					</p>
 

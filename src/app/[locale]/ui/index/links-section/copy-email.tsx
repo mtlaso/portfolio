@@ -19,7 +19,7 @@ export const CopyEmail = () => {
 				<TooltipTrigger asChild>
 					<li
 						className="text-sm dark:text-neutral-300 cursor-pointer
-          hover:text-purple-700	transition-colors duration-200"
+          hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 						onClick={handleCopyEmail}
 						onKeyDown={handleCopyEmail}
 					>

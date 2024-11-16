@@ -17,7 +17,7 @@ export const LinksSection = () => {
 			<ul className={`divide-y ${SPACING.TITLES_SPACING}`}>
 				<li
 					className="text-sm dark:text-neutral-300
-          hover:text-purple-700	transition-colors duration-200"
+          hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 				>
 					<Link
 						target="blank"
@@ -35,7 +35,7 @@ export const LinksSection = () => {
 
 				<li
 					className="text-sm dark:text-neutral-300
-          hover:text-purple-700	transition-colors duration-200"
+          hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 				>
 					<Link
 						target="blank"
@@ -51,7 +51,7 @@ export const LinksSection = () => {
 
 				<li
 					className="text-sm dark:text-neutral-300
-          hover:text-purple-700	transition-colors duration-200"
+          hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 				>
 					<Link
 						target="blank"
