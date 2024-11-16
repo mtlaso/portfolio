@@ -3,6 +3,11 @@
     "somethingWentWrong": "Une erreur est survenue!",
     "retry": "Réessayer"
   },
+  "NotFound": {
+    "pageNotFound": "404 - Page non trouvée",
+    "description": "Désolé, nous n'avons pas trouvé la page que vous recherchez.",
+    "backHome": "Retour à l'accueil"
+  },
   "Common": {
     "email": "Courriel",
     "sourceCode": "Code source",

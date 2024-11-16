@@ -31,22 +31,20 @@ export default async function RootLayout({
 
 	// suppressHydrationWarning -> (next-theme)
 	return (
-		<>
-			<html lang={locale} suppressHydrationWarning>
-				<body className={`${inter.className} antialiased`}>
-					<NextIntlClientProvider messages={messages}>
-						<ThemeProvider
-							attribute="class"
-							defaultTheme="system"
-							enableSystem
-							disableTransitionOnChange
-						>
-							{children}
-							<Toaster />
-						</ThemeProvider>
-					</NextIntlClientProvider>
-				</body>
-			</html>
-		</>
+		<html lang={locale} suppressHydrationWarning>
+			<body className={`${inter.className} antialiased`}>
+				<NextIntlClientProvider messages={messages}>
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						{children}
+						<Toaster />
+					</ThemeProvider>
+				</NextIntlClientProvider>
+			</body>
+		</html>
 	);
 }

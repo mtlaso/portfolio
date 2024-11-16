@@ -3,6 +3,11 @@
     "somethingWentWrong": "Something went wrong!",
     "retry": "Try again"
   },
+  "NotFound": {
+    "pageNotFound": "404 - Page not found",
+    "description": "Sorry, we couldn't find the page you're looking for.",
+    "backHome": "Back to home"
+  },
   "Common": {
     "email": "Email",
     "sourceCode": "Source code",

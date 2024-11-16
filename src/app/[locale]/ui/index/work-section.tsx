@@ -5,12 +5,12 @@ import {
 	workExperience,
 } from "@/app/[locale]/lib/placeholder-data";
 import { SPACING } from "@/app/[locale]/ui/spacing";
+import { Link } from "@/i18n/routing";
 import {
 	type DateTimeFormatOptions,
 	useFormatter,
 	useTranslations,
 } from "next-intl";
-import { Link } from "@/i18n/routing";
 
 const INTL_DATE_FORMAT_OPTS = {
 	year: "numeric",
