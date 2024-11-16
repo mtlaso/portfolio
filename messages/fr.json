@@ -1,4 +1,8 @@
 {
+  "Error": {
+    "somethingWentWrong": "Une erreur est survenue!",
+    "retry": "Réessayer"
+  },
   "Common": {
     "email": "Courriel",
     "sourceCode": "Code source",
