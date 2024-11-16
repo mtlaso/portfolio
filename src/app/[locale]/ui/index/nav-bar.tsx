@@ -11,7 +11,7 @@ export const NavBar = () => {
 	return (
 		<nav className="mb-12 py-5 flex items-center gap-4">
 			<Link href={"/"} className="font-semibold tracking-tight">
-				NomSite
+				dnncrye
 			</Link>
 			<Suspense fallback={<ModeToggleSkeleton />}>
 				<ModeToggle />
