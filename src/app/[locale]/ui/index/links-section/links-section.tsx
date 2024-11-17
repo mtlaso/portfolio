@@ -11,7 +11,7 @@ export const LinksSection = () => {
 			className={`${SPACING.SECTIONS_SPACING} ${SPACING.INSIDE_SECTIONS_SPACING}`}
 		>
 			<div className={`${SPACING.TITLES_SPACING} `}>
-				<h2 className="font-semibold tracking-tight text-3xl">Liens</h2>
+				<h2 className="font-semibold tracking-tight text-3xl">{t("links")}</h2>
 			</div>
 
 			<ul className={`divide-y ${SPACING.TITLES_SPACING}`}>

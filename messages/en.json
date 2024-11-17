@@ -17,7 +17,8 @@
     "sourceCode": "Source code",
     "present": "Present",
     "copyEmail": "Copy email",
-    "emailCopied": "Email copied to clipboard!"
+    "emailCopied": "Email copied to clipboard!",
+    "links": "Links"
   },
   "NavBar": {
     "modeToggle": {
