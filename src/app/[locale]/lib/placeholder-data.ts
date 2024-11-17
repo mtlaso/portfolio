@@ -83,6 +83,7 @@ export const stackItems: StackItem[] = [
 export const workExperience: Work[] = [
 	{
 		start: new Date(2024, 1, 0).toISOString(),
+		finish: new Date(2024, 10, 31).toISOString(),
 		company: "Cogiweb",
 		translationKey: "cogiweb",
 		location: "Québec, QC",
