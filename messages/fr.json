@@ -1,10 +1,10 @@
 {
   "Metadata": {
     "title": "Danny D. — Portfolio",
-    "description": "Portfolio"
+    "description": "Portfolio Danny D. - Développeur full stack"
   },
   "Error": {
-    "somethingWentWrong": "Une erreur est survenue!",
+    "somethingWentWrong": "Une erreur est survenue !",
     "retry": "Réessayer"
   },
   "NotFound": {
@@ -15,9 +15,9 @@
   "Common": {
     "email": "Courriel",
     "sourceCode": "Code source",
-    "present": "Présent",
+    "present": "à présent",
     "copyEmail": "Copier courriel",
-    "emailCopied": "Courriel copié dans le presse-papier!"
+    "emailCopied": "Courriel copié dans le presse-papier !"
   },
   "NavBar": {
     "modeToggle": {
@@ -34,7 +34,7 @@
     },
     "TechStack": {
       "title": "Technologies",
-      "subtitle": "Quelques unes des technologies dans les quelles je me spécialise.",
+      "subtitle": "Quelques-unes des technologies dans lesquelles je me spécialise.",
       "items": {
         "typescript": {
           "description": "JavaScript avec une syntaxe pour les types"
@@ -49,7 +49,7 @@
           "description": "Framework CSS"
         },
         "golang": {
-          "description": "Language de programmation"
+          "description": "Langage de programmation"
         },
         "nodejs": {
           "description": "Environnement d'exécution JavaScript"
@@ -58,7 +58,7 @@
           "description": "Bases de données SQL/NoSQL"
         },
         "csharp": {
-          "description": "Language de programmation"
+          "description": "Langage de programmation"
         }
       }
     },
@@ -68,16 +68,16 @@
         "cogiweb": {
           "title": "Analyste développeur",
           "achievements": [
-            "Participé à la transition d'une application monolithique C# vers des technologies web modernes",
-            "Maintenu et amélioré une application legacy en C#",
-            "Créé des outils internes pour accélérer le développement et la productivité de l'équipe",
-            "Résolu des bugs en production, assurant la stabilité et la fiabilité des services"
+            "Participation à la transition d'une application monolithique C# vers des technologies web modernes",
+            "Maintenance et amélioration d'une application existante en C#",
+            "Création d'outils internes pour accélérer le développement et la productivité de l'équipe",
+            "Résolution de bugs en production, assurant la stabilité et la fiabilité des services"
           ]
         },
         "garneau": {
-          "title": "Tuteur Étudiants Informatique",
+          "title": "Tuteur en Informatique",
           "achievements": [
-            "Tuteur pour des étudiants en informatique"
+            "Tuteur pour des étudiants en informatique au cégep Garneau"
           ]
         },
         "ramq": {
