@@ -1,5 +1,5 @@
 # Porfolio
-[ddncrye.dev↗](https://ddncrye.dev)
+[ddncrye.dev↗](https://dnncrye.dev)
 
 ## Stack
 [![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
