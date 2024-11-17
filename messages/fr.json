@@ -1,4 +1,8 @@
 {
+  "Metadata": {
+    "title": "Danny. D — Portfolio",
+    "description": "Portfolio"
+  },
   "Error": {
     "somethingWentWrong": "Une erreur est survenue!",
     "retry": "Réessayer"
