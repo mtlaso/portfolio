@@ -69,10 +69,10 @@
         "cogiweb": {
           "title": "Developer Analyst",
           "achievements": [
-            "Participated in transitioning a C# monolithic application to modern web technologies",
-            "Maintained and improved a legacy C# application",
-            "Created internal tools to accelerate team development and productivity",
-            "Resolved production bugs, ensuring service stability and reliability"
+            "Led transition of C# monolithic app to modern web tech",
+            "Enhanced and supported legacy C# application",
+            "Developed internal tools to boost team efficiency",
+            "Resolved production bugs for service stability"
           ]
         },
         "garneau": {
@@ -84,8 +84,8 @@
         "ramq": {
           "title": "Workforce Management Technician",
           "achievements": [
-            "Responsible for preparing and recovering computer equipment for incoming and outgoing employees",
-            "Provided fast and reliable technical support to employees"
+            "Prepared and recovered computer equipment for new and departing employees",
+            "Offered prompt and dependable technical assistance to staff members"
           ]
         }
       }
