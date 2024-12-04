@@ -7,6 +7,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 // @ts-ignore
 export async function generateMetadata({ params: { locale } }) {
@@ -50,6 +51,11 @@ export default async function RootLayout({
 					</ThemeProvider>
 				</NextIntlClientProvider>
 			</body>
+			<Script
+				defer
+				data-site-id="dnncrye.dev"
+				src="https://assets.onedollarstats.com/tracker.js"
+			/>
 		</html>
 	);
 }
