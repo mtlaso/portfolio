@@ -10,7 +10,10 @@ import { notFound } from "next/navigation";
 import Script from "next/script";
 
 // @ts-ignore
-export async function generateMetadata({ params: { locale } }) {
+export async function generateMetadata({
+	params,
+}: { params: Promise<{ locale: string }> }) {
+	const locale = (await params).locale;
 	const t = await getTranslations({ locale, namespace: "Metadata" });
 
 	return {

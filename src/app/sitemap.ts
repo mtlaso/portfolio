@@ -1,5 +1,5 @@
+import { type Locale, getPathname, routing } from "@/i18n/routing";
 import type { MetadataRoute } from "next";
-import { getPathname, type Locale, routing } from "@/i18n/routing";
 
 const HOST = "https://dnncrye.dev";
 
