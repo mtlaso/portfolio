@@ -14,16 +14,18 @@ export const LinksSection = () => {
 				<h2 className="font-semibold tracking-tight text-3xl">{t("links")}</h2>
 			</div>
 
-			<ul className={`divide-y ${SPACING.TITLES_SPACING}`}>
+			<ul className="divide-y">
 				<li
-					className="text-sm dark:text-neutral-300
+					className="text-sm  dark:text-neutral-300
           hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 				>
 					<Link
 						target="blank"
 						rel="noopener noreferrer"
 						href={`${CONTACT.LINKEDIN}`}
+						className="flex justify-between py-1"
 					>
+						<p>(1)</p>
 						<p>
 							LinkedIn
 							<span className="text-purple-700">&nbsp;↗</span>
@@ -34,14 +36,16 @@ export const LinksSection = () => {
 				<CopyEmail />
 
 				<li
-					className="text-sm dark:text-neutral-300
+					className="text-sm  dark:text-neutral-300
           hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 				>
 					<Link
 						target="blank"
 						rel="noopener noreferrer"
 						href={`${CONTACT.GITHUB}`}
+						className="flex justify-between py-1"
 					>
+						<p>(3)</p>
 						<p>
 							GitHub
 							<span className="text-purple-700">&nbsp;↗</span>
@@ -50,14 +54,16 @@ export const LinksSection = () => {
 				</li>
 
 				<li
-					className="text-sm dark:text-neutral-300
+					className="text-sm  dark:text-neutral-300
           hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 				>
 					<Link
 						target="blank"
 						rel="noopener noreferrer"
 						href={`${CONTACT.SOURCE_CODE}`}
+						className="flex justify-between py-1"
 					>
+						<p>(4)</p>
 						<p>
 							{t("sourceCode")}
 							<span className="text-purple-700">&nbsp;↗</span>

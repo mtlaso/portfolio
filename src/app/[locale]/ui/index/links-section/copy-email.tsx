@@ -18,11 +18,12 @@ export const CopyEmail = () => {
 			<Tooltip>
 				<TooltipTrigger asChild>
 					<li
-						className="text-sm dark:text-neutral-300 cursor-pointer
+						className="text-sm  flex justify-between py-1 dark:text-neutral-300 cursor-pointer
           hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 						onClick={handleCopyEmail}
 						onKeyDown={handleCopyEmail}
 					>
+						<p>(2)</p>
 						<p>
 							{t("email")}
 							<span className="text-purple-700">
