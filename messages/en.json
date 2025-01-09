@@ -105,14 +105,6 @@
         "evalupro": {
           "title": "EvaluPro",
           "description": "Web application for product evaluation with a multi-criteria rating system. Users can search, compare and evaluate products according to different roles (visitor, user, tester, admin)."
-        },
-        "trello-clone": {
-          "title": "Trello Clone",
-          "description": "Kanban-style task management application. Features boards, lists and cards with deadline filtering and drag-and-drop functionality."
-        },
-        "nextjs-calendar": {
-          "title": "Next.js Calendar",
-          "description": "Calendar with real-time synchronization between devices via WebSocket. Enables creation, modification and deletion of events with PostgreSQL persistence."
         }
       }
     }

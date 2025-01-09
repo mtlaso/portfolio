@@ -147,31 +147,6 @@ export const projects: Project[] = [
 			"Sequelize",
 		],
 	},
-	{
-		date: new Date(2023, 2, 0).toISOString(),
-		link: new URL("https://github.com/mtlaso/tp3-dev-web"),
-		translationKey: "trello-clone",
-		technologies: [
-			"Vue.js",
-			"TypeScript",
-			"Node.js",
-			"Express",
-			"MongoDB",
-			"Pinia",
-		],
-	},
-	{
-		date: new Date(2022, 2, 0).toISOString(),
-		link: new URL("https://github.com/mtlaso/calendrier-nextjs"),
-		translationKey: "nextjs-calendar",
-		technologies: [
-			"Next.js",
-			"TypeScript",
-			"WebSocket",
-			"PostgreSQL",
-			"Recoil.js",
-		],
-	},
 ];
 
 export const CONTACT = {

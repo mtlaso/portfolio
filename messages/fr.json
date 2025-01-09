@@ -105,14 +105,6 @@
         "evalupro": {
           "title": "EvaluPro",
           "description": "Application web d'évaluation de produits avec système de notation multicritères. Les utilisateurs peuvent rechercher, comparer et évaluer des produits selon différents rôles (visiteur, utilisateur, testeur, admin)."
-        },
-        "trello-clone": {
-          "title": "Clone de Trello",
-          "description": "Application de gestion de tâches style Kanban. Fonctionnalités de tableaux, listes et cartes avec filtrage par date limite et drag-and-drop."
-        },
-        "nextjs-calendar": {
-          "title": "Clone de Google Calendar",
-          "description": "Calendrier avec synchronisation en temps réel entre appareils via WebSocket. Permet la création, modification et suppression d'événements avec persistance PostgreSQL."
         }
       }
     }
