@@ -94,6 +94,10 @@
       "title": "Projects",
       "subtitle": "Some personal projects.",
       "items": {
+        "bocal": {
+          "title": "Bocal",
+          "description": "Bocal is an application that combines an RSS reader with a bookmark manager. It allows users to follow their favorite websites and organize their links in one place."
+        },
         "go-tcp-server": {
           "title": "Go TCP Server",
           "description": "Concurrent chat server in Go enabling real-time communication between multiple clients, featuring an integrated queue system and mini guessing game."

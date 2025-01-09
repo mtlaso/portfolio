@@ -114,6 +114,21 @@ export const workExperience: Work[] = [
 
 export const projects: Project[] = [
 	{
+		date: new Date(2025, 1, 0).toISOString(),
+		link: new URL("https://bocal.dnncrye.dev/"),
+		translationKey: "bocal",
+		technologies: [
+			"Next.js",
+			"tailwindcss",
+			"shadcn/ui",
+			"Auth.js",
+			"next-intl",
+			"PostgreSQL",
+			"Drizzle ORM",
+			"RSS/Atom",
+		],
+	},
+	{
 		date: new Date(2024, 2, 0).toISOString(),
 		link: new URL("https://github.com/mtlaso/go-tcp-server"),
 		translationKey: "go-tcp-server",

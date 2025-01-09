@@ -94,6 +94,10 @@
       "title": "Projets",
       "subtitle": "Quelques projets personnels.",
       "items": {
+        "bocal": {
+          "title": "Bocal",
+          "description": "Bocal est une application qui combine un lecteur RSS et un gestionnaire de liens. Elle permet aux utilisateurs de suivre leurs sites préférés et d'organiser leurs liens dans un seul endroit."
+        },
         "go-tcp-server": {
           "title": "Serveur TCP en Go",
           "description": "Serveur de chat concurrent en Go permettant la communication en temps réel entre plusieurs clients, avec système de file d'attente et mini-jeu de devinettes intégré."
