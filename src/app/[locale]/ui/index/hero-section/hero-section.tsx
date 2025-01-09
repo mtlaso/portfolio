@@ -15,7 +15,7 @@ export const HeroSection = () => {
 			className={`${SPACING.TITLES_SPACING} ${SPACING.SECTIONS_SPACING}`}
 		>
 			<div>
-				<p className="text-4xl font-semibold">Danny D.</p>
+				<p className="text-4xl font-semibold">Danny D. 👋</p>
 			</div>
 
 			<div className="flex flex-col gap-2">
