@@ -119,6 +119,7 @@ export const projects: Project[] = [
 		translationKey: "bocal",
 		technologies: [
 			"Next.js",
+			"TypeScript",
 			"tailwindcss",
 			"shadcn/ui",
 			"Auth.js",
