@@ -42,7 +42,7 @@ export const stackItems: StackItem[] = [
 		icon: RiTailwindCssFill,
 		iconColor: "#38bdf8",
 		iconSize: "24",
-		title: "tailwindcss",
+		title: "Tailwind CSS",
 		translationKey: "tailwindcss",
 		desc: "Framework CSS",
 	},
@@ -120,7 +120,7 @@ export const projects: Project[] = [
 		technologies: [
 			"Next.js",
 			"TypeScript",
-			"tailwindcss",
+			"Tailwind CSS",
 			"shadcn/ui",
 			"Auth.js",
 			"next-intl",
