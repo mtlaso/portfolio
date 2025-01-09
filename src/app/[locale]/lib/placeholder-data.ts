@@ -150,7 +150,7 @@ export const projects: Project[] = [
 ];
 
 export const CONTACT = {
-	EMAIL: "portfolio.kjqjs@passinbox.com",
+	EMAIL: "hey@dnncrye.dev",
 	LINKEDIN: "https://www.linkedin.com/in/ddem/",
 	GITHUB: "https://github.com/mtlaso/",
 	SOURCE_CODE: "https://github.com/mtlaso/portfolio",
