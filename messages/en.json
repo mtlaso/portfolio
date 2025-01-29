@@ -41,7 +41,7 @@
           "description": "JavaScript with type syntax"
         },
         "react": {
-          "description": "JavaScript library for building user interfaces"
+          "description": "JavaScript library"
         },
         "nextjs": {
           "description": "React framework"
