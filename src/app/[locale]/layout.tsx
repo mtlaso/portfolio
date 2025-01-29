@@ -12,7 +12,10 @@ import Script from "next/script";
 // @ts-ignore
 export async function generateMetadata({
 	params,
-}: { params: Promise<{ locale: string }> }) {
+}: { params: Promise<{ locale: string }> }): Promise<{
+	title: string;
+	description: string;
+}> {
 	const locale = (await params).locale;
 	const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -28,7 +31,7 @@ export default async function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 	params: Promise<{ locale: string }>;
-}>) {
+}>): Promise<React.JSX.Element> {
 	const locale = (await params).locale;
 
 	// biome-ignore lint/suspicious/noExplicitAny: locale exception.

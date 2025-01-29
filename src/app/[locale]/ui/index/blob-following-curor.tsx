@@ -1,12 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export function BlobFollowingCursor(): React.JSX.Element {
 	const ref = useRef<HTMLDivElement>(null);
+	const [isLoaded, setIsLoaded] = useState(false);
 
 	useEffect(() => {
-		const onMouseMove = (e: MouseEvent) => {
+		// wait 500ms before starting the animation
+		setTimeout(() => {
+			setIsLoaded(true);
+		}, 500);
+
+		const onMouseMove = (e: MouseEvent): void => {
 			if (ref.current) {
 				ref.current.animate(
 					{
@@ -23,10 +29,14 @@ export function BlobFollowingCursor(): React.JSX.Element {
 
 		document.addEventListener("mousemove", onMouseMove);
 
-		return () => {
+		return (): void => {
 			document.removeEventListener("mousemove", onMouseMove);
 		};
 	}, []);
+
+	if (!isLoaded) {
+		return <></>;
+	}
 
 	return (
 		<>
