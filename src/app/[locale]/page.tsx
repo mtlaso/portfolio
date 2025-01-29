@@ -5,7 +5,7 @@ import { WorkSection } from "@/app/[locale]/ui/index/work-section";
 
 export default function Home() {
 	return (
-		<main className="min-h-screen max-w-2xl mx-auto px-4">
+		<main className="min-h-screen max-w-3xl mx-auto px-4">
 			<NavBar />
 			<HeroSection />
 			<WorkSection />
