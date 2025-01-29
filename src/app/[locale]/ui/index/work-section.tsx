@@ -79,7 +79,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 							<span className="text-purple-700">&nbsp;↗</span>
 						</p>
 					</Link>
-					<p className="text-justify text-sm dark:text-neutral-300">
+					<p className="text-sm dark:text-neutral-300">
 						{t(`${itemsTKey}.description`)}
 					</p>
 				</div>
@@ -154,10 +154,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 
 					<ul className="list-disc list-inside">
 						{t.raw(`${itemsTKey}.achievements`)?.map((item: string) => (
-							<li
-								className="text-justify text-sm dark:text-neutral-300"
-								key={item}
-							>
+							<li className="text-sm dark:text-neutral-300" key={item}>
 								{item}
 							</li>
 						))}
