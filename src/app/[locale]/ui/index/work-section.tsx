@@ -61,7 +61,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 	return (
 		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
 			<div className="col-span-1">
-				<p className="text-sm dark:text-neutral-500">{projectDate} ~</p>
+				<p className="text-base dark:text-neutral-500">{projectDate} ~</p>
 			</div>
 
 			<div className="col-span-3 grid gap-2">
