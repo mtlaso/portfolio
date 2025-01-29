@@ -213,9 +213,9 @@ const StackCard = ({
 
 	return (
 		<li
-			className="p-2.5 xl:h-28 aspectvideo
+			className="p-2.5 xl:h-28
 		  flex flex-col gap-2 justify-between overflow-clip line-clamp-1
-      rounded-xl border border-white border-opacity-10 shadow-md"
+      rounded-xl border dark:border-white/10 shadow-md"
 		>
 			<p className="flex items-center gap-1">
 				{<item.icon size={item.iconSize} color={item.iconColor} />}
