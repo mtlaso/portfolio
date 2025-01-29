@@ -42,6 +42,22 @@
   --radius-lg: var(--radius);
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
+
+
+  --animate-blob: rotate-blob 20s infinite;
+  @keyframes rotate-blob {
+      from {
+          rotate: 0deg;
+      }
+
+      /* 50% {
+          scale: 1 1.2
+      } */
+
+      to {
+          rotate: 360deg;
+      }
+  }
 }
 
 /*
