@@ -141,7 +141,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 	return (
 		<li className="grid grid-cols-1 sm:grid-cols-4 text-sm gap-2 sm:gap-4">
 			<div className="col-span-1">
-				<p className="capitalize text-sm dark:text-neutral-500">
+				<p className="capitalize text-base dark:text-neutral-500">
 					{startDate} — {endDate}
 				</p>
 			</div>
@@ -152,7 +152,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 						{t(`${itemsTKey}.title`)} — {work.company}
 					</p>
 
-					<ul className="list-disc list-inside marker:text-purple-700">
+					<ul className="list-disc list-inside">
 						{t.raw(`${itemsTKey}.achievements`)?.map((item: string) => (
 							<li
 								className="text-justify text-sm dark:text-neutral-300"
