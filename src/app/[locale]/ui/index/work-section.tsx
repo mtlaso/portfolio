@@ -11,6 +11,7 @@ import {
 	useFormatter,
 	useTranslations,
 } from "next-intl";
+import { TbExternalLink, TbExternalLinkOff } from "react-icons/tb";
 
 const INTL_DATE_FORMAT_OPTS = {
 	year: "numeric",
@@ -73,10 +74,12 @@ const ProjectCard = ({ project }: { project: Project }) => {
 					>
 						<p
 							className="text-base dark:text-neutral-100 font-semibold
+							flex gap-1 items-center
               hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 						>
 							{t(`${itemsTKey}.title`)}
-							<span className="text-purple-700">&nbsp;↗</span>
+							{/* <span className="text-purple-700">&nbsp;↗</span> */}
+							<TbExternalLink />
 						</p>
 					</Link>
 					<p className="text-sm dark:text-neutral-300">

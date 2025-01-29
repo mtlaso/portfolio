@@ -3,6 +3,8 @@ import { CopyEmail } from "@/app/[locale]/ui/index/links-section/copy-email";
 import { SPACING } from "@/app/[locale]/ui/spacing";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { FaLinkedin } from "react-icons/fa6";
+import { TbExternalLink } from "react-icons/tb";
 
 export const LinksSection = () => {
 	const t = useTranslations("Common");
@@ -26,9 +28,9 @@ export const LinksSection = () => {
 						className="flex justify-between py-1"
 					>
 						<p>(1)</p>
-						<p>
+						<p className="flex gap-1 items-center">
 							LinkedIn
-							<span className="text-purple-700">&nbsp;↗</span>
+							<TbExternalLink />
 						</p>
 					</Link>
 				</li>
@@ -46,9 +48,9 @@ export const LinksSection = () => {
 						className="flex justify-between py-1"
 					>
 						<p>(3)</p>
-						<p>
+						<p className="flex gap-1 items-center">
 							GitHub
-							<span className="text-purple-700">&nbsp;↗</span>
+							<TbExternalLink />
 						</p>
 					</Link>
 				</li>
@@ -64,9 +66,9 @@ export const LinksSection = () => {
 						className="flex justify-between py-1"
 					>
 						<p>(4)</p>
-						<p>
+						<p className="flex gap-1 items-center">
 							{t("sourceCode")}
-							<span className="text-purple-700">&nbsp;↗</span>
+							<TbExternalLink />
 						</p>
 					</Link>
 				</li>

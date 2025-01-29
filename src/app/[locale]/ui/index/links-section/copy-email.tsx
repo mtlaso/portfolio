@@ -24,12 +24,9 @@ export const CopyEmail = () => {
 						onKeyDown={handleCopyEmail}
 					>
 						<p>(2)</p>
-						<p>
+						<p className="flex gap-1 items-center">
 							{t("email")}
-							<span className="text-purple-700">
-								&nbsp;
-								<FaCopy className="inline" />
-							</span>
+							<FaCopy className="inline" />
 						</p>
 					</li>
 				</TooltipTrigger>
