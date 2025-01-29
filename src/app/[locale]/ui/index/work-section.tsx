@@ -72,7 +72,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 						rel="noopener noreferrer"
 					>
 						<p
-							className="text-base dark:text-neutral-100 font-semibold 
+							className="text-base dark:text-neutral-100 font-semibold
               hover:text-purple-700 dark:hover:text-purple-700 transition-colors duration-200"
 						>
 							{t(`${itemsTKey}.title`)}
@@ -152,7 +152,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 						{t(`${itemsTKey}.title`)} — {work.company}
 					</p>
 
-					<ul className="list-[katakana] list-inside marker:text-purple-700">
+					<ul className="list-disc list-inside marker:text-purple-700">
 						{t.raw(`${itemsTKey}.achievements`)?.map((item: string) => (
 							<li
 								className="text-justify text-sm dark:text-neutral-300"
@@ -213,7 +213,7 @@ const StackCard = ({
 
 	return (
 		<li
-			className="p-2.5 
+			className="p-2.5
 			grid grid-rows-subgrid row-span-2
       rounded-xl border dark:border-transparent dark:bg-neutral-800
       hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors duration-200"
