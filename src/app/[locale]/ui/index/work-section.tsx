@@ -194,7 +194,7 @@ const TechStackWrapper = () => {
 				<p className="dark:text-neutral-300 text-sm">{t("subtitle")}</p>
 			</div>
 
-			<ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+			<ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4">
 				{stackItems.map((item) => (
 					<StackCard item={item} key={item.title} />
 				))}
@@ -213,10 +213,9 @@ const StackCard = ({
 
 	return (
 		<li
-			className="p-2.5
-			grid grid-rows-subgrid row-span-2
-      rounded-xl border dark:border-transparent dark:bg-neutral-800
-      hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors duration-200"
+			className="p-2.5 xl:h-28 aspectvideo
+		  flex flex-col gap-2 justify-between overflow-clip line-clamp-1
+      rounded-xl border border-white border-opacity-10 shadow-md"
 		>
 			<p className="flex items-center gap-1">
 				{<item.icon size={item.iconSize} color={item.iconColor} />}
