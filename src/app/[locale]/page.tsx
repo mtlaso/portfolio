@@ -1,4 +1,3 @@
-import { BlobFollowingCursor } from "@/app/[locale]/ui/index/blob-following-curor";
 import { HeroSection } from "@/app/[locale]/ui/index/hero-section/hero-section";
 import { LinksSection } from "@/app/[locale]/ui/index/links-section/links-section";
 import { NavBar } from "@/app/[locale]/ui/index/nav-bar";
@@ -36,7 +35,6 @@ export default function Home(): React.JSX.Element {
 						{el.el()}
 					</BlurFade>
 				))}
-				<BlobFollowingCursor />
 			</main>
 		</>
 	);
