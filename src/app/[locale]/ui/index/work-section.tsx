@@ -11,14 +11,14 @@ import {
 	useFormatter,
 	useTranslations,
 } from "next-intl";
-import { TbExternalLink, TbExternalLinkOff } from "react-icons/tb";
+import { TbExternalLink } from "react-icons/tb";
 
 const INTL_DATE_FORMAT_OPTS = {
 	year: "numeric",
 	month: "short",
 } satisfies DateTimeFormatOptions;
 
-export const WorkSection = () => {
+export const WorkSection = (): React.JSX.Element => {
 	return (
 		<section>
 			<TechStackWrapper />
@@ -28,7 +28,7 @@ export const WorkSection = () => {
 	);
 };
 
-const PersonalProjectsWrapper = () => {
+const PersonalProjectsWrapper = (): React.JSX.Element => {
 	const t = useTranslations("HomePage.Projects");
 	return (
 		<section
@@ -48,7 +48,7 @@ const PersonalProjectsWrapper = () => {
 	);
 };
 
-const ProjectCard = ({ project }: { project: Project }) => {
+const ProjectCard = ({ project }: { project: Project }): React.JSX.Element => {
 	const t = useTranslations("HomePage.Projects");
 
 	const format = useFormatter();
@@ -106,7 +106,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
 	);
 };
 
-const WorkExperienceWrapper = () => {
+const WorkExperienceWrapper = (): React.JSX.Element => {
 	const t = useTranslations("HomePage.Work");
 
 	return (
@@ -126,7 +126,7 @@ const WorkExperienceWrapper = () => {
 	);
 };
 
-const WorkCard = ({ work }: { work: Work }) => {
+const WorkCard = ({ work }: { work: Work }): React.JSX.Element => {
 	const t = useTranslations("HomePage.Work");
 	const commonT = useTranslations("Common");
 
@@ -183,7 +183,7 @@ const WorkCard = ({ work }: { work: Work }) => {
 	);
 };
 
-const TechStackWrapper = () => {
+const TechStackWrapper = (): React.JSX.Element => {
 	const t = useTranslations("HomePage.TechStack");
 	return (
 		<section
@@ -207,7 +207,7 @@ const StackCard = ({
 	item,
 }: {
 	item: StackItem;
-}) => {
+}): React.JSX.Element => {
 	const t = useTranslations("HomePage.TechStack.items");
 	const tKey = `${item.translationKey}.description`;
 
