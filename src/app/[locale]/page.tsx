@@ -29,7 +29,7 @@ export default function Home(): React.JSX.Element {
 
 	return (
 		<>
-			<main className="min-h-screen max-w-3xl mx-auto px-4">
+			<main className="max-w-3xl mx-auto px-4 pb-12">
 				{elements.map((el) => (
 					<BlurFade key={el.index} delay={0.25 + el.index * 0.05}>
 						{el.el()}

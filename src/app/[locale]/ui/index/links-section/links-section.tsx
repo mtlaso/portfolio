@@ -3,14 +3,13 @@ import { CopyEmail } from "@/app/[locale]/ui/index/links-section/copy-email";
 import { SPACING } from "@/app/[locale]/ui/spacing";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa6";
 import { TbExternalLink } from "react-icons/tb";
 
-export const LinksSection = () => {
+export const LinksSection = (): React.JSX.Element => {
 	const t = useTranslations("Common");
 	return (
-		<section className={`${SPACING.SECTIONS_SPACING} ${SPACING.LARGE}`}>
-			<div className={`${SPACING.SMALL} `}>
+		<section className={SPACING.LARGE}>
+			<div className={`${SPACING.SMALL}`}>
 				<h2 className="font-semibold tracking-tight text-3xl">{t("links")}</h2>
 			</div>
 
