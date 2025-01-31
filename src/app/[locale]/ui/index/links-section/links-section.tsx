@@ -9,10 +9,8 @@ import { TbExternalLink } from "react-icons/tb";
 export const LinksSection = () => {
 	const t = useTranslations("Common");
 	return (
-		<section
-			className={`${SPACING.SECTIONS_SPACING} ${SPACING.INSIDE_SECTIONS_SPACING}`}
-		>
-			<div className={`${SPACING.TITLES_SPACING} `}>
+		<section className={`${SPACING.SECTIONS_SPACING} ${SPACING.LARGE}`}>
+			<div className={`${SPACING.SMALL} `}>
 				<h2 className="font-semibold tracking-tight text-3xl">{t("links")}</h2>
 			</div>
 

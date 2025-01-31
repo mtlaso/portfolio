@@ -11,9 +11,7 @@ export const HeroSection = () => {
 	const t = useTranslations("HomePage.Hero");
 
 	return (
-		<section
-			className={`${SPACING.TITLES_SPACING} ${SPACING.SECTIONS_SPACING}`}
-		>
+		<section className={`${SPACING.SMALL} ${SPACING.SECTIONS_SPACING}`}>
 			<div>
 				<p className="text-4xl font-semibold">Danny D. 👋</p>
 			</div>
