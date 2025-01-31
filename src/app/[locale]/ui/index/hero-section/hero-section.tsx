@@ -7,7 +7,7 @@ import Link from "next/link";
 import { BiCodeCurly } from "react-icons/bi";
 import { FaGithub, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 
-export const HeroSection = () => {
+export const HeroSection = (): React.JSX.Element => {
 	const t = useTranslations("HomePage.Hero");
 
 	return (
