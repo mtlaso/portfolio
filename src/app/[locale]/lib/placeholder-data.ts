@@ -115,7 +115,7 @@ export const workExperience: Work[] = [
 export const projects: Project[] = [
 	{
 		date: new Date(2025, 1, 0).toISOString(),
-		link: new URL("https://bocal.dnncrye.dev/"),
+		link: new URL("https://bocal.fyi/"),
 		translationKey: "bocal",
 		technologies: [
 			"Next.js",
