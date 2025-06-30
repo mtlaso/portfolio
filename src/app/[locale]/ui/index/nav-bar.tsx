@@ -16,7 +16,7 @@ export const NavBar = () => {
 			</Link>
 			<Link
 				target="_blank"
-				href={"https://bocal.fyi"}
+				href={"https://bocal.fyi/?utm_source=dnncrye"}
 				className="flex gap-1 items-center font-semibold tracking-tight"
 			>
 				bocal
